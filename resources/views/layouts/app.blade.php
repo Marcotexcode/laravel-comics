@@ -14,7 +14,6 @@
         <div class="container">
 
             @include('partials.header')
-            @include('partials.jumbotron')
 
 
             <main>

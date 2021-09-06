@@ -6,7 +6,7 @@
 
     <div class="logo">
 
-        <a href="{{route('homepage')}}"><img class="image" src="{{asset('images/dc-logo.png')}}" alt="Logo-Homepage"></a>
+        <a href="{{route('homepage')}}"><img class="image-logo" src="{{asset('images/dc-logo.png')}}" alt="Logo-Homepage"></a>
 
     </div>
 

@@ -6,6 +6,8 @@
 
 @section('content')
 
+    @include('partials.jumbotron')
+
     <div class="container-comics">
 
         <div class="box-button-container">
@@ -33,7 +35,11 @@
             <!-- @dump($formato) -->
         </div>
 
+
     </div>
+
+    @include('partials.info')
+
 
 @endsection
 
