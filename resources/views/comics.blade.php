@@ -6,43 +6,34 @@
 
 @section('content')
 
-    <hr>
+    <div class="container-comics">
 
-    <h1>comics</h1>
+        <div class="box-button-container">
 
-    <div class="box-container">
+            <div class="container-box">
 
-        @foreach($formati as $formato)
+                @foreach($formati as $formato)
 
-            <div class="box">
+                    <div class="box">
 
-                <div class="image">
 
-                    <img src="{{ $formato['thumb']}}" alt="{{$formato['series']}}">
-
-                </div>
-
-                <div class="title">
+                    <img class="image-comics" src="{{ $formato['thumb']}}" alt="{{$formato['series']}}">
 
                     <p>{{$formato['series']}}</p>
-                    
-                </div>
+
+
+                    </div>
+                @endforeach
 
             </div>
+            
+
+            <button class="btn btn-comics" href="">load more</button>
 
             <!-- @dump($formato) -->
-
-        @endforeach
+        </div>
 
     </div>
-
-    <div class="btn">
-
-        <a href="">load more</a>
-    
-    </div>
-
-    <hr>
 
 @endsection
 
