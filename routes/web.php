@@ -13,6 +13,79 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+//HOME
+
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home');
+})->name('homepage');
+
+
+//CHARACTERS
+
+Route::get('/characters', function () {
+    return view('characters');
+})->name('characterspage');
+
+
+//COMICS
+
+Route::get('/comics', function () {
+    return view('comics');
+})->name('comicspage');
+
+
+//MOVIE
+
+Route::get('/movie', function () {
+    return view('movie');
+})->name('moviepage');
+
+
+//TV
+
+Route::get('/tv', function () {
+    return view('tv');
+})->name('tvpage');
+
+
+//GAMES
+
+Route::get('/games', function () {
+    return view('games');
+})->name('gamespage');
+
+
+//COLLECTIBLES
+
+Route::get('/collectibles', function () {
+    return view('collectibles');
+})->name('collectiblespage');
+
+
+//VIDEOS
+
+Route::get('/videos', function () {
+    return view('videos');
+})->name('videospage');
+
+
+//FANS
+
+Route::get('/fans', function () {
+    return view('fans');
+})->name('fanspage');
+
+
+//NEWS
+
+Route::get('/news', function () {
+    return view('news');
+})->name('newspage');
+
+
+//SHOP
+
+Route::get('/shop', function () {
+    return view('shop');
+})->name('shoppage');
