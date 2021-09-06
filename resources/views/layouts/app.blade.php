@@ -10,16 +10,20 @@
 
     <body>
 
-        @include('partials.header')
+        <div class="container">
 
-        <main>
+            @include('partials.header')
 
-            @yield('content')
+            <main>
 
-        </main>
+                @yield('content')
 
-        @include('partials.footer')
+            </main>
 
+            @include('partials.footer')
+
+        </div>
+        
     </body>
 
 </html>
