@@ -31,7 +31,13 @@ Route::get('/characters', function () {
 //COMICS
 
 Route::get('/comics', function () {
-    return view('comics');
+
+    $comics = config('comics');
+
+    $data = ['formati' => $comics];
+
+    return view('comics', $data);
+
 })->name('comicspage');
 
 
